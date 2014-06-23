@@ -3,11 +3,9 @@
   
   </head>
   <body>
-    <form onsubmit="createAlbum()">
       <input id="album_name" name="alb_name" type="text">
-      <input type="submit">
-    </form>
-  </body>
+      <input type="submit" onclick="createAlbum()">
+  </body> 
   <script>
     function createAlbum(){
       var value = document.getElementById("album_name").value;
