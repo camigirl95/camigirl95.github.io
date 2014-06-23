@@ -4,6 +4,12 @@
   </head> 
   <body>
       <input id="album_name" name="alb_name" type="text">
-      <input type="submit" onclick="createAlbum()">
+      <button id="submitButton">Submit</button>
+      <script>
+        var submit = document.getElementById("");
+        submit.addEventListener("click", function(){
+          camigirl95.album.createAlbum( submit.value );  
+        }, false);
+      </script>
   </body> 
 </html>
