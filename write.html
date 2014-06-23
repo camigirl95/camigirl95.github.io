@@ -12,9 +12,9 @@
       var xhr = new XMLHttpRequest();
       xhr.open("GET","http://jrmeza.comxa.com/clients/camille_haggard/php/createAlbum.php?alb_name=" + value );
       xhr.onstatechange = function(){
-        alert("state change");
+        console.log("state change");
          if(xhr.state == 200 && xhr.readystate == 4){
-           alert("done");
+           console.log("done");
          }
       }
       xhr.send();
