@@ -7,8 +7,9 @@
       <button id="submitButton">Submit</button>
       <script>
         var submit = document.getElementById("submitButton");
+        var input = document.getElementById("album_name");
         submit.addEventListener("click", function(){
-          camigirl95.album.createAlbum( submit.value );  
+          camigirl95.album.createAlbum( input.value );  
         }, false);
       </script>
   </body> 
