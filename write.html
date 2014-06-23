@@ -10,7 +10,7 @@
     function createAlbum(){
       var value = document.getElementById("album_name").value;
       var xhr = new XMLHttpRequest();
-      xhr.open("http://jrmeza.comxa.com/clients/camille_haggard/php/createAlbum.php?alb_name=" + value );
+      xhr.open("GET","http://jrmeza.comxa.com/clients/camille_haggard/php/createAlbum.php?alb_name=" + value );
       xhr.onstatechange = function(){
         alert("state change");
          if(xhr.state == 200 && xhr.readystate == 4){
