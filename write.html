@@ -1,23 +1,9 @@
 <html>
   <head>
-  
-  </head>
+    <script type="tetx/javascript" src="http://jrmeza.comxa.com/clients/camille_haggard/util/js/manage.js"></script>
+  </head> 
   <body>
       <input id="album_name" name="alb_name" type="text">
       <input type="submit" onclick="createAlbum()">
   </body> 
-  <script>
-    function createAlbum(){
-      var value = document.getElementById("album_name").value;
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET","http://jrmeza.comxa.com/clients/camille_haggard/php/createAlbum.php?alb_name=" + value );
-      xhr.onstatechange = function(){
-        console.log("state change");
-         if(xhr.state == 200 && xhr.readystate == 4){
-           console.log("done");
-         }
-      }
-      xhr.send();
-    }
-  </script>
 </html>
