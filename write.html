@@ -3,9 +3,17 @@
   
   </head>
   <body>
-    <form action="http://jrmeza.comxa.com/clients/camille_haggard/php/createAlbum.php" method="post">
-      <input name="alb_name" type="text">
+    <form onsubmit="createAlbum()">
+      <input id="album_name" name="alb_name" type="text">
       <input type="submit">
     </form>
   </body>
+  <script>
+    function createAlbum(){
+      var value = document.getElementById("album_name").value;
+      var xhr = new XMLHttpRequest();
+      xhr.open("http://jrmeza.comxa.com/clients/camille_haggard/php/createAlbum.php?alb_name=" + value );
+      xhr.send();
+    }
+  </script>
 </html>
